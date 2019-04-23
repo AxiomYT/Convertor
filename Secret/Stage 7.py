@@ -89,15 +89,15 @@ def output(output1, totalscore, percentage):
 
 # Outputs final result and then exits
     if output1 == 1:
-        print("\nWith a percentage score of", round(percentage, 2), "%","You're performing at an A grade. \n")
+        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at an A grade. \n")
     elif output1 == 2:
-        print("\nWith a percentage score of", round(percentage, 2), "%","You're performing at a B grade. \n")
+        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a B grade. \n")
     elif output1 == 3:
-        print("\nWith a percentage score of", round(percentage, 2), "%","You're performing at a C grade. \n")
+        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a C grade. \n")
     elif output1 == 4:
-        print("\nWith a percentage score of", round(percentage, 2), "%","You're performing at a D grade. \n")
+        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a D grade. \n")
     elif output1 == 5:
-        print("\nWith a percentage score of", round(percentage, 2), "%","You're performing at a D grade. \n")
+        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a D grade. \n")
 
 #----------------------------------------#
 		# BODY #
@@ -115,17 +115,24 @@ percentage1 = 0.0
 counter = 0
 x = 0
 
-# Programme begins with the reading of the file
+# Programme begins with the opening of the file
 f = open('results.txt',"r")
+# Programme then reads said file
 fl = f.readlines()
+# Programme then closes the file after assigning contents to an array
+f.close()
+# Repeats until the counter variable (x) is under 15
 while x != 15:
+# Adds one to the counter - until it reaches 15
     x +=1
+# As file is in comma deliminated format, strips commas between variables
     contents = fl[x].split(",")
+# Removes new lines from mark contents (without this number is returned as something like 90\n)
     courseworkmark = contents[1].strip("\n")
-    print(courseworkmark)
+# Assigns the coursework mark section of the source file to the courseworkmark variable
     exammark = contents[2]
-    percentage(int(courseworkmark), exammark)
-        
+# Sends courseworkmark and exammark variables to percentage function
+    percentage(int(courseworkmark), exammark)     
 
 # This input is then checked to see if it's valid - if it is, it shall continue, on the counterpoise - it shall exit
 if int(int(courseworkmark) <= 60) and (int(int(courseworkmark)) >= 0):
