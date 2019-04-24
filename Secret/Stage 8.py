@@ -45,72 +45,76 @@ def linear_search(value, value_list):
        # PERCENTAGE & TOTAL SCORE #
 #----------------------------------------#
 
-counter = 0
-
 def acounter(counter):
     print(counter)
     
 # The percentage function calculates the percentage from both scores added together
 def percentage(courseworkmark, exammark):
+    percentage1 = 0
     totalscore = int(courseworkmark) + int(exammark)
-    percentage1 = (totalscore / 150 * 100)
-
+    percentage1 = ((totalscore / 150) * (100))
 # Returns final percentage to the grade function
     grade(percentage1)
-    return totalscore, percentage1
 
 #----------------------------------------#
 	       # GRADE #
 #----------------------------------------#
 
 # The grade function calculates the grade from percentage from the previous percentage function
-def grade(percentage):
-
+def grade(percentage1):
     grade1 = 0
     
-    if ((percentage >= 70) and (percentage <= 100)):
+    if ((percentage1 >= 70) and (percentage1 <= 100)):
         grade1 = 1
-    elif (percentage >= 60) and (percentage <= 69.9):
+    elif (percentage1 >= 60) and (percentage1 <= 69.9):
         grade1 = 2
-    elif (percentage >= 50) and (percentage <= 59.9):
+    elif (percentage1 >= 50) and (percentage1 <= 59.9):
         grade1 = 3
-    elif (percentage >= 45) and (percentage <= 49.9):
+    elif (percentage1 >= 45) and (percentage1 <= 49.9):
         grade1 = 4
-    elif ((percentage < 45) and (percentage >= 0)):
+    elif ((percentage1 < 45) and (percentage1 >= 0)):
         grade1 = 5
-    elif (percentage != 100) or (percentage < 0):
-        print(percentage)
+    elif (percentage1 != 100) or (percentage1 < 0):
+        print(percentage1)
         print("Error in input, please try again.")
         raise SystemExit
+        acounter(counter)
 # Returns grade in numbers between 1 - 5 to output function
-    output(grade1, totalscore, percentage)
+    output(grade1, totalscore, percentage1)
 
 #----------------------------------------#
 	       # OUTPUT #
 #----------------------------------------#
-
 # Recieves grade and dignifies a value to each number recieved from the grade function     
-def output(output1, totalscore, percentage):
-
+def output(output1, totalscore, percentage1):
+    counter = 0
 # Outputs final result and then exits
     if output1 == 1:
-        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at an A grade. \n")
-        counter +=1
-    elif output1 == 2:
-        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a B grade. \n")
-    elif output1 == 3:
-        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a C grade. \n")
-    elif output1 == 4:
-        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a D grade. \n")
-    elif output1 == 5:
-        print(contents[0],"- With a percentage score of", round(percentage, 2), "%","You're performing at a D grade. \n")
+        print("{} - With a percentage score of {}% You're performing at an A grade. \n".format(contents[0], round(percentage1, 2)))
+        counter += 1
+        print(counter)
 
-    acounter(counter)
+        if counter == 4:
+            print("sans")
+        
+        acounter(counter)
+    elif output1 == 2:
+        print("{} - With a percentage score of {}% You're performing at an B grade. \n".format(contents[0], round(percentage1, 2)))
+    elif output1 == 3:
+        print("{} - With a percentage score of {}% You're performing at an C grade. \n".format(contents[0], round(percentage1, 2)))
+    elif output1 == 4:
+        print("{} - With a percentage score of {}% You're performing at an D grade. \n".format(contents[0], round(percentage1, 2)))
+    elif output1 == 5:
+        print("{} - With a percentage score of {}% You're performing at an F grade. \n".format(contents[0], round(percentage1, 2)))
+
+    return counter
+
 #----------------------------------------#
 		# BODY #
 #----------------------------------------#
 
 # Declaring Variables
+
 total = 150
 grade2 = 0
 courseworkmark = 0
@@ -118,7 +122,7 @@ exammark = 0
 output1 = 0
 grade1 = 0
 totalscore = 0
-percentage1 = 0.0
+percentage1 = 0
 x = 0
 
 # Programme begins with the opening of the file
@@ -127,16 +131,18 @@ f = open('results.txt',"r")
 fl = f.readlines()
 # Programme then closes the file after assigning contents to an array
 f.close()
-# Repeats until the counter variable (x) is under 15
+# Repeats until all lines are read
 for x in fl:
 # As file is in comma deliminated format, strips commas between variables
+    contents = x.strip("'")
+    contents = x.strip("\n")
     contents = x.split(",")
 # Removes new lines from mark contents (without this number is returned as something like 90\n)
-    courseworkmark = int(contents[1].strip("\n"))
+    courseworkmark = int(contents[2].strip("\n"))
 # Assigns the coursework mark section of the source file to the courseworkmark variable
     exammark = int(contents[2])
 # Sends courseworkmark and exammark variables to percentage function
-    percentage(int(courseworkmark), exammark)
+    percentage(int(courseworkmark), int(exammark))
 
 # This input is then checked to see if it's valid - if it is, it shall continue, on the counterpoise - it shall exit
 if int(int(courseworkmark) <= 60) and (int(int(courseworkmark)) >= 0):
