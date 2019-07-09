@@ -10,32 +10,44 @@ def open_length_page():
         var1 = int(entryOne.get())
         
         calcDict = {
-            #Nautical Mile Conversion
+            # Nautical Mile Conversion
             'nminmi': var1*1,
-            'nmimi': 1,
-            'nmikm': 1,
-            'nmim': 1,
-            'nmiyd': 1,
-            'nmift': 1,
-            'nmiin': 1,
-            'nmicm': 1,
-            'nmimm': 1,
-            'nmium': 1,
-            'nminm': 1,
+            'nmimi': ans = float(num1) * 1.151,
+            'nmikm': ans = float(num1) * 1.852,
+            'nmim': ans = float(num1) * 1852,
+            'nmiyd': ans = float(num1) * 2025.372,
+            'nmift': ans = float(num1) * 6076.115,
+            'nmiin': ans = float(num1) * 72913.386,
+            'nmicm': ans = float(num1) * 185200,
+            'nmimm': ans = float(num1) * (1.852*(10**6)),
+            'nmium': ans = float(num1) * (1.852*(10**9)),
+            'nminm': ans = float(num1) * (1.852*(10**12)),
 
-            #Mile Conversion
-            'minmi': 1,
+            # Mile Conversion
+            'minmi': ans = float(num1) / 1.151,
             'mimi': var1*1,
-            'mikm': 1,
-            'mim': 1,
-            'miyd': 1,
-            'mift': 1,
-            'mift': 1,
-            'miin': 1,
-            'micm': 1,
-            'mimm' : 1,
-            'mium': 1,
-            'minm': 1
+            'mikm': ans = float(num1) * 1.609,
+            'mim': ans = float(num1) * 1609.344,
+            'miyd': ans = float(num1) * 1760,
+            'mift': ans = float(num1) * 5280,
+            'miin': ans = float(num1) * 63360,
+            'micm': ans = float(num1) * 160934.4,
+            'mimm' : ans = float(num1) * (1.609*(10**6)),
+            'mium': ans = float(num1) * (1.609*(10**9)),
+            'minm': ans = float(num1) * (1.609*(10**12)),
+
+            # Kilometre Conversion
+            'kmkm': var1 * 1
+            'kmcm': ans = float(num1) * 100000
+            'kmmm': ans = float(num1) * (1*(10**6))
+            'kmum': ans = float(num1) * (1*(10**9))
+            'kmnm': ans = float(num1) * (1*(10**12))
+            'kmmi': ans = float(num1) / 1.609
+            'kmyd': ans = float(num1) * 1093.613
+            'kmft': ans = float(num1) * 3280.84
+            'kmin': ans = float(num1) * 39370.079
+            'kmnmi': ans = float(num1) / 1.852
+            'kmm': ans = float(num1) * 1000
         }
         
         #topResult = topCombo.get()
