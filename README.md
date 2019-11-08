@@ -28,6 +28,20 @@ Currently supports:
 * st (Stones), 
 * oz (Ounces)
 
+- [ ] **Radio Conversion Calculators**
+* dBm To Watt Calculator
+
+# Under Construction
+- [ ] **Radio conversion calculators**
+* Frequency to Wavelength
+* Noise Factor to Noise Figure Calculator
+* Noise Figure to Noise Temperature Calculator
+* Noise Temperature to Noise Figure Converter
+* PPM to Hz Calculator
+* SINAD to ENOB Calculator
+* Watt To dBm Calculator
+* Wavelength to Frequency
+
 # Planned updates
 
 - [ ] **More things to convert**
