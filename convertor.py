@@ -34,68 +34,98 @@ def lengthcalc(unit1, unit2, num1):
 #----------//Kilometres\\----------#
     if unit1 == "km" and unit2 == "m":
         ans = float(num1) * 1000;
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "cm":
         ans = float(num1) * 100000;
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "mm":
         ans = float(num1) * (1*(10**6));
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "um":
         ans = float(num1) * (1*(10**9));
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "nm":
         ans = float(num1) * (1*(10**12));
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "mi":
         ans = float(num1) / 1.609;
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "yd":
         ans = float(num1) * 1093.613;
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "ft":
         ans = float(num1) * 3280.84;
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "in":
         ans = float(num1) * 39370.079;
+        input("Press enter to exit ;)")
     elif unit1 == "km" and unit2 == "nmi":
         ans = float(num1) / 1.852;
+        input("Press enter to exit ;)")
         
 #----------//Metres\\-----------#
     elif unit1 == "m" and unit2 == "km":
         ans = float(num1) / 1000;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "cm":
         ans = float(num1) * 100;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "mm":
         ans = float(num1) * 1000;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "um":
         ans = float(num1) * (1*(10**6));
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "nm":
         ans = float(num1) * (1*(10**9));
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "mi":
         ans = float(num1) / 1609.344;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "yd":
         ans = float(num1) * 1.094;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "ft":
         ans = float(num1) * 3.281;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "in":
         ans = float(num1) * 39.37;
+        input("Press enter to exit ;)")
     elif unit1 == "m" and unit2 == "nmi":
         ans = float(num1) / 1852;
+        input("Press enter to exit ;)")
         
 #----------//Centimetres\\----------#
     elif unit1 == "cm" and unit2 == "km":
         ans = float(num1) / 100000;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "m":
         ans = float(num1) / 100;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "mm":
         ans = float(num1) * 10;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "um":
         ans = float(num1) * 10000;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "nm":
         ans = float(num1) * (1*(10**7));
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "mi":
         ans = float(num1) / 160934.4;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "yd":
         ans = float(num1) / 91.44;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "ft":
         ans = float(num1) / 30.48;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "in":
         ans = float(num1) / 2.54;
+        input("Press enter to exit ;)")
     elif unit1 == "cm" and unit2 == "nmi":
         ans = float(num1) / 185200;
+        input("Press enter to exit ;)")
         
 #----------//Millimetres\\----------#
     elif unit1 == "mm" and unit2 == "km":
