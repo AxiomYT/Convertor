@@ -1,6 +1,5 @@
 #----------//Variables\\----------#
 
-import tkinter
 import webbrowser
 import math
 
@@ -621,8 +620,8 @@ def radio_calculation_calculator(selector1, c):
         tref = float(input("Please enter the reference temperature in Kelvin (Usually 290K)\n\n"));
         ntemp = float(input("Please enter the noise temperature\n\n"));
 
-        ans = 10 * math.log(ntemp / tref + 1) / math.log(10);
-        print(ans, "dB");
+        print(str(10 * math.log(ntemp / tref + 1) / math.log(10)) + " dB");
+
 
     elif(selector1 == 6):
 
