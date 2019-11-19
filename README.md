@@ -30,6 +30,14 @@ Currently supports:
 
 - [ ] **Radio Conversion Calculators**
 * dBm To Watt Calculator
+* Frequency to Wavelength
+* Noise Factor to Noise Figure Calculator
+* Noise Figure to Noise Temperature Calculator
+* Noise Temperature to Noise Figure Converter
+* PPM to Hz Calculator
+* SINAD to ENOB Calculator
+* Watt To dBm Calculator
+* Wavelength to Frequency
 
 # Under Construction
 - [ ] **Radio conversion calculators**
@@ -56,17 +64,6 @@ Currently supports:
 * Temperature
 * Time
 * Volume,
-
-- [ ] **Radio conversion calculators**
-* dBm To Watt Calculator
-* Frequency to Wavelength
-* Noise Factor to Noise Figure Calculator
-* Noise Figure to Noise Temperature Calculator
-* Noise Temperature to Noise Figure Converter
-* PPM to Hz Calculator
-* SINAD to ENOB Calculator
-* Watt To dBm Calculator
-* Wavelength to Frequency
 
 - [ ] **Antenna Calculators**
 * Antenna Downtilt Angle Calculator
