@@ -573,7 +573,7 @@ def weightcalc(unit1, unit2, num1):
       print(str(ans) + " Ounces\n");
       
 def radio_calculation_calculator(selector1, c):
-    selector1 = float(input("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1)  dBm To Watt Calculator\n(2)  Frequency to Wavelength\n(3)  Noise Factor to Noise Figure Calculator\n(4)  Noise Figure to Noise Temperature Calculator\n(5)  Noise Temperature to Noise Figure Convertor\n(6)  PPM to Hz Calculator // Under Construction\n(7)  SINAD to ENOB Calculator // Under Construction\n(8)  Watt To dBm Calculator // Under Construction\n(9)  Wavelength to Frequency // Under Construction\n"));
+    selector1 = float(input("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1)  dBm To Watt Calculator\n(2)  Frequency to Wavelength\n(3)  Noise Factor to Noise Figure Calculator\n(4)  Noise Figure to Noise Temperature Calculator\n(5)  Noise Temperature to Noise Figure Convertor\n(6)  PPM to Hz Calculator\n(7)  SINAD to ENOB Calculator\n(8)  Watt To dBm Calculator\n(9)  Wavelength to Frequency\n"));
     input1 = 0;
     ans = 0;
     
@@ -632,16 +632,52 @@ def radio_calculation_calculator(selector1, c):
         if(unit == 2):
             PPMkHz(c, input1, unit1);
         if(unit == 3):
-            PMMHz(c, input1, unit1);
+            PPMMHz(c, input1, unit1);
         if(unit == 4):
             PPMGHz(c, input1, unit1);
                 
 
-    #elif(selector1 == 7):
+    elif(selector1 == 7):
 
-    #elif(selector1 == 8):
+        sinad = float(input("Please enter the Value of SINAD in dB\n\n"))
+        ans = (( (sinad) - (1.76)) / ( 6.02 ))
+        print("With a SINAD Value of", sinad, "dB, Your calculated ENOB Value is", ans, "Bits")
+    elif(selector1 == 8):
 
-    #elif(selector1 == 9):
+        Watts = float(input("\nPlease enter your wattage in Watts\n\n"))
+        ans = ((10) * math.log10(Watts) + (30))
+        print("With a wattage of", Watts, "Watt(s), your calculated dBm would be", ans ,"dBm")        
+
+    elif(selector1 == 9):
+
+        Lambda = float(input("Please enter your wavelength in Metres\n\n"));
+        unit = float(input("What unit of frequency are you expecting your output in?\n\n (1) Hz\n (2) kHz\n (3) MHz\n (4) GHz\n\n"));
+
+        if(unit == 1):
+            WavHz(c, Lambda);
+        if(unit == 2):
+            WavkHz(c, Lambda);
+        if(unit == 3):
+            WavMHz(c, Lambda);
+        if(unit == 4):
+            WavGHz(c, Lambda);
+
+def WavHz(c, Lambda):
+            ans = ((c) / Lambda);
+            print("With a Wavelength of", Lambda,"Metres, This wavelength's frequency in air is", ans, "Hz");
+
+def WavkHz(c, Lambda):
+            ans = ((c) / ((Lambda) * 1000));
+            print("With a Wavelength of", Lambda,"Metres, This wavelength's frequency in air is", ((ans)/(1000)), "kHz");
+  
+def WavMHz(c, Lambda):
+            ans = ((c) / Lambda);
+            print("With a Wavelength of", Lambda,"Metres, This wavelength's frequency in air is", ((ans)/(1000000)), "MHz");
+     
+def WavGHz(c, Lambda):
+            ans = ((c) / Lambda);
+            print("With a Wavelength of", Lambda,"Metres, This wavelength's frequency in air is", ((ans)/(1000000000)), "GHz");
+
 
 def Hz(c, input1, unit1):
             input1 = float(input("Please enter your frequency in Hertz\n\n"));
@@ -667,24 +703,28 @@ def GHz(c, input1, unit1):
 
 def PPMHz(c, input1, unit1):
             input1 = float(input("Please enter your oscillation frequency in Hertz\n\n"));
-            ans = ((c) / input1);
-            print("With a frequency of", input1,"Hz, This frequency's wavelength in air is", ans, "Metres");
+            PPM = float(input("Please enter Frequency Stability in PPM (Parts Per Million)\n\n"))
+            ans = ((input1 * PPM) / (10**6))
+            print("With an Oscillation frequency of",input1,"Hz, and a PPM of", PPM, "PPM, Your outputted Hz Value is", ans, "Hz");
 
 def PPMkHz(c, input1, unit1):
-            input1 = float(input("Please enter your oscillation frequency in kHz\n\n"));
-            value == (input * 1000)
-            PPMHz(c, value, unit1);
+            input1 = float(input("Please enter your oscillation frequency in Kilohertz\n\n"));
+            PPM = float(input("Please enter Frequency Stability in PPM (Parts Per Million)\n\n"))
+            ans = ((((input1) * (1000)) * (PPM)) / (10**6));
+            print("With an Oscillation frequency of",input1,"KHz, and a PPM of", PPM, "PPM, Your outputted Hz Value is", ans, "Hz");
             
 def PPMMHz(c, input1, unit1):
-            input1 = float(input("Please enter your oscillation frequency in MHz\n\n"));
-            ans = ((c) / (input1  * (10**6)));
-            print("With a frequency of", input1, "MHz, This frequency's wavelength in air is", ans, "Metres");
-            
+            input1 = float(input("Please enter your oscillation frequency in Megahertz\n\n"));
+            PPM = float(input("Please enter Frequency Stability in PPM (Parts Per Million)\n\n"))
+            ans = ((((input1) * (10000)) * (PPM)) / (10**6));
+            print("With an Oscillation frequency of",input1,"MHz, and a PPM of", PPM, "PPM, Your outputted Hz Value is", ans, "Hz");
+           
 def PPMGHz(c, input1, unit1):
-            input1 = float(input("Please enter your oscillation frequency in GHz\n\n"));
-            ans = ((c) / (input1  * (10**9)));
-            print("With a frequency of", input1, "GHz, This frequency's wavelength in air is", ans, "Metres");
-
+            input1 = float(input("Please enter your oscillation frequency in Gigahertz\n\n"));
+            PPM = float(input("Please enter Frequency Stability in PPM (Parts Per Million)\n\n"))
+            ans = ((((input1) * (10000)) * (PPM)) / (10**6));
+            print("With an Oscillation frequency of",input1,"GHz, and a PPM of", PPM, "PPM, Your outputted Hz Value is", ans, "Hz");
+   
 
 def radio_calculation_calculatorcalc(selector1, c):
 
@@ -713,7 +753,8 @@ def radio_calculation_calculatorcalc(selector1, c):
             ans = ((c) / input1);
         print("With a frequency of", input1, unit1, "This frequency's wavelength in air is", ans, "Metres");
 
-# def antenna_calculator():
+def antenna_calculator():
+    print("Which category would you like to convert? we support any of these topics...")
 # def attenuator_calculator():
 # def microstrip_calculator():
 # def radar_calculator():
@@ -723,7 +764,7 @@ def radio_calculation_calculatorcalc(selector1, c):
 #----------//Main\\----------#
 print("Welcome to my convertor, please follow me on GitHub if it's useful! :)\n");
 
-selector = input("Which category would you like to convert? we support any of these topics, just type the number shown to see all subjects within it > \n\n(1)  Length\n(2)  Weight\n(3)  Radio conversion calculators // Under Construction\n(4)  Antenna Calculators// Not Working\n(5)  Attenuator Calculators// Not Working\n(6)  Microstrip Calculators// Not Working\n(7)  Radar Calculators// Not Working\n(8)  RF Calculators// Not Working\n(9)  Waveguide Calculators// Not Working\n(10) My Github\n(11) Exit Programme\n");
+selector = input("Which category would you like to convert? we support any of these topics, just type the number shown to see all subjects within it > \n\n(1)  Length\n(2)  Weight\n(3)  Radio conversion calculators\n(4)  Antenna Calculators// Not Working\n(5)  Attenuator Calculators// Not Working\n(6)  Microstrip Calculators// Not Working\n(7)  Radar Calculators// Not Working\n(8)  RF Calculators// Not Working\n(9)  Waveguide Calculators// Not Working\n(10) My Github\n(11) Exit Programme\n");
 
 if ((float(selector)) == (1)):
     length();
