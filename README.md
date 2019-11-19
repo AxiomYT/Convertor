@@ -40,15 +40,18 @@ Currently supports:
 * Wavelength to Frequency
 
 # Under Construction
-- [ ] **Radio conversion calculators**
-* Frequency to Wavelength
-* Noise Factor to Noise Figure Calculator
-* Noise Figure to Noise Temperature Calculator
-* Noise Temperature to Noise Figure Converter
-* PPM to Hz Calculator
-* SINAD to ENOB Calculator
-* Watt To dBm Calculator
-* Wavelength to Frequency
+* Antenna Calculators
+* Antenna Downtilt Angle Calculator
+* Antenna Downtilt Coverage Calculator
+* Antenna Near Field Distance Calculator
+* Conical Horn Antenna Gain Calculator
+* Dipole Antenna Length Calculator
+* EIRP - Effective Isotropic Radiated Power
+* Helical Antenna Design
+* Line of Sight Calculator
+* Microstrip Patch Antenna Calculator
+* Parabolic Antenna Gain Calculator
+* Whip Antenna Calculator
 
 # Planned updates
 
