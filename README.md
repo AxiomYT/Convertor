@@ -3,7 +3,7 @@ A Python CLI script that converts units
 
 Currently supports:
 
-- [ ] Length
+- [ ] **Length**
 * km (Kilometres),
 * m (Metres), 
 * cm (Centimetres),
@@ -16,7 +16,7 @@ Currently supports:
 * in (Inches), 
 * nmi (Nautical Miles)
 
-- [ ] Weight
+- [ ] **Weight**
 * lbs (Pounds), 
 * tn (Tonnes), 
 * g (Grammes), 
