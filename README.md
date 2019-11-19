@@ -40,7 +40,8 @@ Currently supports:
 * Wavelength to Frequency
 
 # Under Construction
-* Antenna Calculators
+
+- [ ] **Antenna Calculators**
 * Antenna Downtilt Angle Calculator
 * Antenna Downtilt Coverage Calculator
 * Antenna Near Field Distance Calculator
