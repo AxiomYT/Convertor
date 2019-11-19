@@ -754,13 +754,25 @@ def radio_calculation_calculatorcalc(selector1, c):
         print("With a frequency of", input1, unit1, "This frequency's wavelength in air is", ans, "Metres");
 
 def antenna_calculator():
-    print("Which category would you like to convert? we support any of these topics...")
+    selector1 = float(input("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1)"));
+
 # def attenuator_calculator():
 # def microstrip_calculator():
 # def radar_calculator():
 # def rf_calculator():
-# def waveguide_calculator():
+ def waveguide_calculator():
+    selector1 = float(("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1) Cavity Resonance Frequency\n (2) Circular Waveguide Calculator\n (3) Rectangular Waveguide Cut-off Frequency\n"));
 
+    if ((selector1) == (1)):
+        width = float(input("Please enter the cavity width\n");
+        length = float(input("Please enter the cavity length\n");
+        height = float(input("Please enter the cavity height\n");
+        m = float(input("Please enter the M(Mode number) \n");             
+        n = float(input("Please enter the N(Mode number) \n");
+        p = float(input("Please enter the P(Mode number) \n");
+        diconst = float(input("Please enter the Dialectric Constant of the material\n");
+        magperm = float(input("Please enter the Magneric Permiability of the material\n");
+                        
 #----------//Main\\----------#
 print("Welcome to my convertor, please follow me on GitHub if it's useful! :)\n");
 
