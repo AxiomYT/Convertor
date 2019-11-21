@@ -754,29 +754,59 @@ def radio_calculation_calculatorcalc(selector1, c):
         print("With a frequency of", input1, unit1, "This frequency's wavelength in air is", ans, "Metres");
 
 def antenna_calculator():
-    selector1 = float(input("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1)"));
 
+    selector1 = float(input("\nWhich category would you like to convert? we support any of these topics, just type the number shown\n\n(1) Antenna Downtilt Angle\n\n"));
+
+    if ((selector1) == (1)):
+
+        selector = float(input("\nPlease enter the unit of height you are entering your input in\n\n(1) Feet\n(2) Metres\n\n"));
+
+        if selector == 1:
+            unit = "Feet";
+            Hb = float(input("\nPlease enter the height of the Base Antenna in Feet\n"));
+            Hr = float(input("Please enter the height of the Remote Antenna in Feet\n"));
+            DistUnit = float(input("Please enter the unit of distance you are entering your input in\n\n(1) Kilometres\n(2) Miles"));
+            
+            if DistUnit == 1:
+                Dist = float(input("Please enter the distance between the base and remote station in Kilometres"));
+
+            if DistUnit == 2:
+                Dist = float(input("Please enter the distance between the base and remote station in Miles"));
+            
+        elif selector == 2:
+            unit = "Metres";    
+            Hb = float(input("\nPlease enter the height of the Base Antenna in Metres\n"));
+            Hr = float(input("Please enter the height of the Remote Antenna in Metres\n"));
+            Dist = float(input("Please enter the unit of distance you are entering your input in\n\n"));
+            
+            if DistUnit == 1:
+                Dist = float(input("Please enter the distance between the base and remote station in Kilometres"));
+
+            if DistUnit == 2:
+                Dist = float(input("Please enter the distance between the base and remote station in Miles"));
+                
 # def attenuator_calculator():
 # def microstrip_calculator():
 # def radar_calculator():
 # def rf_calculator():
- def waveguide_calculator():
-    selector1 = float(("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1) Cavity Resonance Frequency\n (2) Circular Waveguide Calculator\n (3) Rectangular Waveguide Cut-off Frequency\n"));
+def waveguide_calculator():
+    selector1 = float(input("Which category would you like to convert? we support any of these topics, just type the number shown\n\n(1) Cavity Resonance Frequency\n(2) Circular Waveguide Calculator\n(3) Rectangular Waveguide Cut-off Frequency\n"));
 
     if ((selector1) == (1)):
-        width = float(input("Please enter the cavity width\n");
-        length = float(input("Please enter the cavity length\n");
-        height = float(input("Please enter the cavity height\n");
-        m = float(input("Please enter the M(Mode number) \n");             
-        n = float(input("Please enter the N(Mode number) \n");
-        p = float(input("Please enter the P(Mode number) \n");
-        diconst = float(input("Please enter the Dialectric Constant of the material\n");
-        magperm = float(input("Please enter the Magneric Permiability of the material\n");
-                        
+        width = float(input("Please enter the cavity width\n"));
+        length = float(input("Please enter the cavity length\n"));
+        height = float(input("Please enter the cavity height\n"));
+        m = float(input("Please enter the M(Mode number) \n"));             
+        n = float(input("Please enter the N(Mode number) \n"));
+        p = float(input("Please enter the P(Mode number) \n"));
+        diconst = float(input("Please enter the Dialectric Constant of the material\n"));
+        magperm = float(input("Please enter the Magnetic Permeability of the material\n"));
+        print("These are test values, cavity resonance is not easy to calculate the math for correctly -", width, length, height, m, n, p, diconst, magperm);
+        print("This will be worked on last");
 #----------//Main\\----------#
 print("Welcome to my convertor, please follow me on GitHub if it's useful! :)\n");
 
-selector = input("Which category would you like to convert? we support any of these topics, just type the number shown to see all subjects within it > \n\n(1)  Length\n(2)  Weight\n(3)  Radio conversion calculators\n(4)  Antenna Calculators// Not Working\n(5)  Attenuator Calculators// Not Working\n(6)  Microstrip Calculators// Not Working\n(7)  Radar Calculators// Not Working\n(8)  RF Calculators// Not Working\n(9)  Waveguide Calculators// Not Working\n(10) My Github\n(11) Exit Programme\n");
+selector = input("Which category would you like to convert? we support any of these topics, just type the number shown to see all subjects within it > \n\n(1)  Length\n(2)  Weight\n(3)  Radio conversion calculators\n(4)  Antenna Calculators// Not Working\n(5)  Attenuator Calculators// Not Working\n(6)  Microstrip Calculators// Not Working\n(7)  Radar Calculators// Not Working\n(8)  RF Calculators// Not Working\n(9)  Waveguide Calculators// Not Working\n(10) My Github\n(11) Exit Programme\n\n");
 
 if ((float(selector)) == (1)):
     length();
