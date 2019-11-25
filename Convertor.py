@@ -765,15 +765,17 @@ def antenna_calculator():
             unit = "Feet";
             Hb = float(input("\nPlease enter the height of the Base Antenna in Feet\n"));
             Hr = float(input("Please enter the height of the Remote Antenna in Feet\n"));
-            DistUnit = float(input("Please enter the unit of distance you are entering your input in\n\n(1) Kilometres\n(2) Miles"));
+            DistUnit = float(input("Please enter the unit of distance you are entering your input in\n\n(1) Kilometres\n(2) Miles\n"));
             
             if DistUnit == 1:
                 Dist = float(input("\nPlease enter the distance between the base and remote station in Kilometres\n"));
 
             if DistUnit == 2:
                 Dist = float(input("\nPlease enter the distance between the base and remote station in Miles\n"));
-                angle = ((math.degrees(math.atan(Hb - Hr))) / (Dist));
-
+                top = Hb = Hr;
+                bottom = Dist * 5280;
+                print(bottom);
+                angle = ((math.degrees(math.atan((top)) / (bottom))));
                 print(angle);
             
         elif selector == 2:
