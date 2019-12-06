@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Set up Python
+    - name: Convertor
       uses: actions/setup-python@v1
       with:
         python-version: '3.x'
