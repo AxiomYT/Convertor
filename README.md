@@ -1,4 +1,7 @@
 # Convertor
+
+![MPLV2](https://img.shields.io/badge/Licence-MPL%20V.2-orange)
+
 A Python CLI script that converts units
 
 Currently supports:
