@@ -1,5 +1,6 @@
 # Convertor <img src="5848152fcef1014c0b5e4967.png" width="auto" height="50" align="right"/>
 
+![Language](https://img.shields.io/badge/Language-Python-orange)
 ![MPLV3](https://img.shields.io/github/license/AxiomYT/Convertor?color=orange)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AxiomYT/Convertor?color=orange)
 ![Maintenence](https://img.shields.io/maintenance/yes/2019?color=orange)
