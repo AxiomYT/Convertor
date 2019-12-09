@@ -1,5 +1,4 @@
-# Convertor <img style=" width: 50px; height: auto; float: right;" src="5848152fcef1014c0b5e4967.png" alt="Python Logo">
-
+# Convertor <img src="5848152fcef1014c0b5e4967.png" width="50" height="50" align="right"/>
 
 ![MPLV3](https://img.shields.io/github/license/AxiomYT/Convertor?color=orange)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AxiomYT/Convertor?color=orange)
