@@ -1,7 +1,8 @@
 # Convertor
 
 ![MPLV2](https://img.shields.io/badge/Licence-MPL%20V.2-orange)
-![GitHub repo size](https://img.shields.io/github/repo-size/AxiomYT/Convertor?color=orange),
+![GitHub repo size](https://img.shields.io/github/repo-size/AxiomYT/Convertor?color=orange)
+![Maintenence](https://img.shields.io/maintenance/yes/2019?color=orange)
 
 A Python CLI script that converts units
 
