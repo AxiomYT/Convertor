@@ -8,7 +8,8 @@ A Python CLI script that converts units
 
 Currently supports:
 
-- [ ] **Length**
+- [ ] **Length** <img src="983d164af2aaa300cd54eb5cff01a433.svg" width="50" height="50" align="right"/>
+
 * km (Kilometres),
 * m (Metres), 
 * cm (Centimetres),
@@ -21,7 +22,7 @@ Currently supports:
 * in (Inches), 
 * nmi (Nautical Miles)
 
-- [ ] **Weight**
+- [ ] **Weight** <img src="img_530560.png" width="50" height="50" align="right"/>
 * lbs (Pounds), 
 * tn (Tonnes), 
 * g (Grammes), 
@@ -33,7 +34,8 @@ Currently supports:
 * st (Stones), 
 * oz (Ounces)
 
-- [ ] **Radio Conversion Calculators**
+- [ ] **Radio Conversion Calculators** <img src="img_453005.png" width="50" height="50" align="right"/>
+
 * dBm To Watt Calculator
 * Frequency to Wavelength
 * Noise Factor to Noise Figure Calculator
@@ -46,7 +48,7 @@ Currently supports:
 
 # Under Construction
 
-- [ ] **Antenna Calculators**
+- [ ] **Antenna Calculators** <img src="Antenna-PNG-Transparent.png" width="50" height="50" align="right"/>
 * Antenna Downtilt Angle Calculator
 * Antenna Downtilt Coverage Calculator
 * Antenna Near Field Distance Calculator
@@ -74,7 +76,8 @@ Currently supports:
 * Time
 * Volume,
 
-- [ ] **Antenna Calculators**
+- [ ] **Antenna Calculators** <img src="kisspng-television-antenna-line-angle-tv-antenna-5b30bb26dda203.3820136215299202949078 (1).png" width="50" height="50" align="right"/>
+
 * Antenna Downtilt Angle Calculator
 * Antenna Downtilt Coverage Calculator
 * Antenna Near Field Distance Calculator
