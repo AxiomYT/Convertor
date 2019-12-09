@@ -1,4 +1,4 @@
-# Convertor <img src="5848152fcef1014c0b5e4967.png" width="50" height="50" align="right"/>
+# Convertor <img src="5848152fcef1014c0b5e4967.png" width="auto" height="50" align="right"/>
 
 ![MPLV3](https://img.shields.io/github/license/AxiomYT/Convertor?color=orange)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AxiomYT/Convertor?color=orange)
@@ -8,7 +8,7 @@ A Python CLI script that converts units
 
 Currently supports:
 
-- [ ] **Length** <img src="983d164af2aaa300cd54eb5cff01a433.svg" width="50" height="50" align="right"/>
+- [ ] **Length** <img src="983d164af2aaa300cd54eb5cff01a433.svg" width="auto" height="50" align="right"/>
 
 * km (Kilometres),
 * m (Metres), 
@@ -22,7 +22,7 @@ Currently supports:
 * in (Inches), 
 * nmi (Nautical Miles)
 
-- [ ] **Weight** <img src="img_530560.png" width="50" height="50" align="right"/>
+- [ ] **Weight** <img src="img_530560.png" width="auto" height="30" align="right"/>
 * lbs (Pounds), 
 * tn (Tonnes), 
 * g (Grammes), 
@@ -34,7 +34,7 @@ Currently supports:
 * st (Stones), 
 * oz (Ounces)
 
-- [ ] **Radio Conversion Calculators** <img src="img_453005.png" width="50" height="50" align="right"/>
+- [ ] **Radio Conversion Calculators** <img src="img_453005.png" width="aut" height="50" align="right"/>
 
 * dBm To Watt Calculator
 * Frequency to Wavelength
@@ -48,7 +48,7 @@ Currently supports:
 
 # Under Construction
 
-- [ ] **Antenna Calculators** <img src="Antenna-PNG-Transparent.png" width="50" height="50" align="right"/>
+- [ ] **Antenna Calculators** <img src="Antenna-PNG-Transparent.png" width="auto" height="50" align="right"/>
 * Antenna Downtilt Angle Calculator
 * Antenna Downtilt Coverage Calculator
 * Antenna Near Field Distance Calculator
@@ -76,7 +76,7 @@ Currently supports:
 * Time
 * Volume,
 
-- [ ] **Antenna Calculators** <img src="kisspng-television-antenna-line-angle-tv-antenna-5b30bb26dda203.3820136215299202949078 (1).png" width="50" height="50" align="right"/>
+- [ ] **Antenna Calculators** <img src="kisspng-television-antenna-line-angle-tv-antenna-5b30bb26dda203-removebg-preview.png" width="auto" height="50" align="right"/>
 
 * Antenna Downtilt Angle Calculator
 * Antenna Downtilt Coverage Calculator
@@ -90,7 +90,7 @@ Currently supports:
 * Parabolic Antenna Gain Calculator
 * Whip Antenna Calculator
 
-- [ ] **Attenuator Calculators**
+- [ ] **Attenuator Calculators** <img src="582px-Attenuator__Pi-section-removebg-preview.png" width="auto" height="50" align="right"/>
 * Balanced Attenuator Calculator
 * Bridged Tee Attenuator Calculator
 * Pi Attenuator Calculator
@@ -98,14 +98,14 @@ Currently supports:
 * RF Attenuator Calculators
 * Tee Attenuator Calculator
 
-- [ ] **Microstrip Calculators**
+- [ ] **Microstrip Calculators** <img src="Microstrip_scheme-removebg-preview.png" width="auto" height="25" align="right"/>
 * Differential Microstrip Impedance Calculator
 * Embedded Microstrip Impedance Calculator
 * Microstrip Mitred Bend Calculator
 * Microstrip Width Calculator
 * Transmission Line Mitred Bend Calculator
 
-- [ ] **Radar Calculators**
+- [ ] **Radar Calculators** <img src="computer-icons-airport-surveillance-radar-air-traffic-control-png-favpng-unHeCEczC6wJqREpsx5nsYp8e-removebg-preview.png" width="auto" height="50" align="right"/>
 * Effective Antenna Aperture Calculator
 * Maximum Unambiguous Range Calculator
 * Pulse Repetition Frequency Calculator
@@ -114,7 +114,7 @@ Currently supports:
 * RF Power Density
 * Target Gain Factor Calculator
 
-- [ ] **RF Calculators**
+- [ ] **RF Calculators** <img src="imgbin-radio-wave-fm-broadcasting-radio-frequency-radio-ijyuVMYUBBB0heSmMdnN6fVDM-removebg-preview.png" width="auto" height="50" align="right"/>
 * Cascaded Noise Figure Calculator
 * Coax Calculator
 * Coaxial Cable Calculator
@@ -151,7 +151,8 @@ Currently supports:
 * Wilkinson Power Divider Calculator
 * Wye/Star to Delta Conversion Calculator
 
-- [ ] **VSWR, Return Loss and Reflection Coefficient Calculators**
+- [ ] **VSWR, Return Loss and Reflection Coefficient Calculators** <img src="400px-SWR_Meter.svg.png" width="auto" height="50" align="right"/>
+
 * Reflection Coefficient to Return Loss Calculator
 * Reflection Coefficient to VSWR Calculator
 * Return Loss to Reflection Coefficient Calculator
@@ -160,7 +161,7 @@ Currently supports:
 * VSWR to Reflection Coefficient Calculator
 * VSWR to Return Loss Calculator
 
-- [ ] **Waveguide Calculators**
+- [ ] **Waveguide Calculators** <img src="220px-Waveguide_x_EM_rect_TE31.gif" width="auto" height="50" align="right"/>
 * Cavity Resonance Frequencies
 * Circular Waveguide Calculator
 * Rectangular Waveguide Calculator
